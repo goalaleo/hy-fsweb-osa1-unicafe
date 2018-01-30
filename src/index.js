@@ -13,8 +13,6 @@ class App extends React.Component {
 
   giveRating = (rating) => () => this.setState({[rating]: this.state[rating] + 1})
 
-  debugger
-
   totalScore = () => this.state.good - this.state.bad
   totalVotes = () => this.state.good + this.state.neutral + this.state.bad
   average = () => this.totalScore()/this.totalVotes()
